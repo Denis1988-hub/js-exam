@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,700;1,700&family=Roboto+Mono:ital,wght@0,500;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Калькулятор ремонта комнаты</h1>
+
+<form id="form">
+    <fieldset>
+        <legend>
+            Отделочные работы
+        </legend>
+        <div class="field">
+            <label>Площадь пола</label>
+            <input type="number" class="metr"> в кв.м
+            <label>Предпологаемое половое покрытие</label>
+            <select id="sum-polovoe-pokritie">
+                <option value="0">Выберите</option>
+                <option class="laminat" value="100">Ламинат</option>
+                <option class="parchet" value="200">Паркет</option>
+                <option class="linoleum" value="80">Линолеум</option>
+            </select>
+
+            <label>Площадь стен</label>
+            <input type="number" class="walls"> в кв.м
+
+            <label>Отделка стен</label>
+            <select id="otdelka-sten">
+                <option value="0">Выберите</option>
+                <option value="100">Обои</option>
+                <option value="200">Плитка</option>
+                <option value="300">Облицовочный кирпич</option>
+            </select>
+            <label>Площадь потолка</label>
+            <input type="number" class="ceiling"> в кв.м
+            <label>Материал потолочного покрытия</label>
+            <select id="potolok">
+                <option value="0">Выберите</option>
+                <option value="500">Натяжные потолки</option>
+                <option value="100">Гипсокартон</option>
+                <option value="300">Кассетный потолок</option>
+            </select>
+            <label>Демонтадные работы</label>
+            <input type="checkbox" class="dem" value="50">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            Электромонтажные работы
+        </legend>
+        <div class="field">
+            <label>Установка розеток, выключателей и замена на новые</label>
+            <input type="number" class="qty-outlet" placeholder="20 MDL за шт"> шт
+            <label>Разводка проводов</label>
+            <input type="number" class="qty-cable" placeholder="10 MDL за п.м"> п.m
+            <label>Установка точечных святильников</label>
+            <input type="number" class="qty-lamp" placeholder="20 MDL за шт"> шт
+            <label>Установка люстры</label>
+            <input type="number" class="qty-chandelier" placeholder="100 MDL за шт"> шт
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            Сантехнические работы
+        </legend>
+        <div class="field">
+            <label>Прокладка труб из полипропилена</label>
+            <input type="checkbox" class="pipe" value="1000">
+
+            <label>Установка cчётчика водянного</label>
+            <input type="number" class="qty-counter" placeholder="100 MDL за шт"> шт
+
+            <label>Установка ванны</label>
+            <input type="checkbox" class="bath" value="1000">
+
+            <label>Установка раковины</label>
+            <input type="checkbox" class="sink" value="300">
+            <label>Установка унитаза</label>
+            <input type="checkbox" class="toilet-bowl" value="500">
+        </div>
+    </fieldset>
+    <div class="summ">
+        &#8195;Стоимость:
+        <p class="total-sum">0.00</p> MDL
+    </div>
+</form>
+<script src="js/main.js"></script>
+</body>
+</html>

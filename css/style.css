@@ -1,0 +1,83 @@
+
+body {
+    background-image: linear-gradient(to right top,
+    #304352, #4e676a, #798a83, #a9ada3, #d7d2cc);
+    background-size: cover;
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgb(164, 170, 237), rgb(155, 167, 231),
+    rgb(147, 164, 225), rgb(138, 160, 220), rgb(129, 157, 214), rgb(121, 154, 208),
+    rgb(112, 151, 202), rgb(104, 148, 196),
+    rgb(95, 145, 190), rgb(86, 141, 185), rgb(78, 138, 179), rgb(69, 135, 173));
+
+}
+
+
+
+legend {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+div {
+    padding-left: 10px;
+
+}
+
+.summ p {
+    display: inline-block;
+    margin-left: 250px;
+}
+
+label{
+    font-size: 16px;
+    left: 10px;
+    display: inline-block;
+    width: 50%;
+    border-top: 4px groove #FFFC00;
+    transition: border-width 0.3s linear;
+}
+
+label:hover {
+    border-color: white;
+}
+select, input {
+    width: 1.5in;
+    padding: 4px;
+   /* border:2px solid #FFFC00;
+    border-radius:5px;*/
+    margin: 0 0 4px 10px;
+    border-radius: 63px 63px 63px 63px;
+    border: 0 groove #FFFC00;
+}
+
+select{
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    height: 19px;
+    margin: 0 0 0 -30px
+}
+
+
+
+
+
+
+
